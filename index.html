@@ -16,14 +16,9 @@
     const response = await fetch("http://localhost:3000/api/users/logout", {
       method: "POST",
       credentials: "include",
-      mode: "no-cors",
-      headers: {
-        "Access-Control-Allow-Origin": "*"
-      }
+      mode: "no-cors"
     })
 
-    const json = await response.json()
-    console.log(json)
   }
   func()
  </script>
